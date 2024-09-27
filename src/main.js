@@ -1,10 +1,10 @@
-import Presenter from 'src/presenter/main-presenter.js';
-import TripListModel from 'src/model/trip-list-model.js';
-import DestinationsModel from 'src/model/destinations-model.js';
-import OffersModel from 'src/model/offers-model.js';
-import FilterModel from 'src/model/filters-model.js';
-import { AUTHORIZATION, SERVER_URL } from 'src/constants.js';
-import PointsApiService from 'src/api-service.js';
+import Presenter from './presenter/main-presenter.js';
+import TripListModel from './model/trip-list-model.js';
+import DestinationsModel from './model/destinations-model.js';
+import OffersModel from './model/offers-model.js';
+import FilterModel from './model/filters-model.js';
+import { AUTHORIZATION, SERVER_URL } from './constants.js';
+import PointsApiService from './api-service.js';
 
 const pointApiservice = new PointsApiService(SERVER_URL, AUTHORIZATION);
 const tripListModel = new TripListModel({apiService: pointApiservice});
