@@ -1,15 +1,15 @@
-import PageTop from '/src/view/page-top-view.js';
-import Sorting from '/src/view/list-sort-view.js';
-import RoutePointList from '/src/view/route-points-list-view.js';
-import ListEmpty from '/src/view/list-empty-view.js';
+import PageTop from '../view/page-top-view.js';
+import Sorting from '../view/list-sort-view.js';
+import RoutePointList from '../view/route-points-list-view.js';
+import ListEmpty from '../view/list-empty-view.js';
 import { render, RenderPosition, remove } from '../framework/render.js';
 import PointPresenter from './point-presenter.js';
 import { calculateEventDuration, isEscape } from '../utils.js';
 import FilterPresenter from './filters-presenter.js';
 import { MessageWithoutPoint, FiltersScheme, UserAction, COUNT_CITIES, Calendar, ButtonText, TimeLimit } from '../constants.js';
-import NewPointView from '/src/view/new-point-view.js';
-import Loading from '/src/view/loading-view.js';
-import FailedLoadData from '/src/view/failed-load-data-view.js';
+import NewPointView from '../view/new-point-view.js';
+import Loading from '../view/loading-view.js';
+import FailedLoadData from '../view/failed-load-data-view.js';
 import UiBlocker from '../framework/ui-blocker/ui-blocker.js';
 
 export default class Presenter {
