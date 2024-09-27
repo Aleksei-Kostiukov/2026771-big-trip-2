@@ -1,6 +1,6 @@
 import { render, replace, remove } from '../framework/render.js';
-import RoutePoint from '../view/route-point-view.js';
-import EditPoint from '../view/edit-point-view.js';
+import RoutePoint from '/src/view/route-point-view.js';
+import EditPoint from '/src/view/edit-point-view.js';
 import { isEscape } from '../utils.js';
 import { Mode, UserAction, ButtonText, TimeLimit } from '../constants.js';
 import UiBlocker from '../framework/ui-blocker/ui-blocker.js';
